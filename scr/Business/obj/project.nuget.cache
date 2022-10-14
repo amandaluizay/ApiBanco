@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nQmzJQ/8hBkXjyTjL0PkpAKMPKgoJOqYZmOj0+nI6OX6PWuDhOBI0aXcRzOo9fICELtiHgon9xFqr3h0ddFjUA==",
+  "success": true,
+  "projectFilePath": "E:\\Projetos\\ProjetoBanco\\scr\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Amanda Luiza\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
