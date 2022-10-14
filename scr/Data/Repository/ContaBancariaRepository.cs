@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace Data.Repository
 {
-    public abstract class Repository : IContaBancariaRepository
+    public abstract class ContaBancariaRepository : IContaBancariaRepository
     {
         protected readonly MeuDbContext Db;
         protected readonly DbSet<ContaBancaria> DbSet;
 
-        protected Repository(MeuDbContext db)
+        protected ContaBancariaRepository(MeuDbContext db)
         {
             Db = db;
             DbSet = db.Set<ContaBancaria>();

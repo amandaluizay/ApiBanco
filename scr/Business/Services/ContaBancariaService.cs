@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Business.Services
 {
-    public class CategoriaService : BaseService, IContaBancariaService
+    public class ContaBancariaService : BaseService, IContaBancariaService
     {
         private readonly IContaBancariaRepository _contaBancariaRepository;
 
-        public CategoriaService(IContaBancariaRepository contaBancariaRepository, INotificador notificador) : base(notificador)
+        public ContaBancariaService(IContaBancariaRepository contaBancariaRepository, INotificador notificador) : base(notificador)
         {
             _contaBancariaRepository = contaBancariaRepository;
         }
