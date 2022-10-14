@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sNagoiptSduoTMZX7HfKtDiasiE6FAjzremUI2KKutW5e7lIXB7sJZAaWdWiwX6dhVZY0V+f7cWBJZwOkkN9Pw==",
+  "dgSpecHash": "ctaJAfO8ydj/AjOdeyoSX5D2esI1CfxtnaA1WiC7VIEdEoc178CcNYrKeVxuVt+SRvYo/2+XkzmJmQPOK8bqvQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\scr\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512"
   ],

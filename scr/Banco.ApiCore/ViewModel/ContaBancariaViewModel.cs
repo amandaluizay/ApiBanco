@@ -2,7 +2,7 @@
 
 namespace Banco.ApiCore.ViewModel
 {
-    public class ContaBancaria
+    public class ContaBancariaViewModel
     {
         [Key]
         public Guid Id { get; set; }
