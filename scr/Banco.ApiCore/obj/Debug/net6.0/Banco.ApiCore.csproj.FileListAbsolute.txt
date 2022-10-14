@@ -163,3 +163,5 @@ C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\Banco.ApiCore.pdb
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\Banco.ApiCore.genruntimeconfig.cache
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\ref\Banco.ApiCore.dll
+C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.dll
+C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
