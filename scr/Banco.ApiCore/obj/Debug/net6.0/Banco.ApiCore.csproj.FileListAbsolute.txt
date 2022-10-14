@@ -93,6 +93,8 @@ C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\Banco.ApiCore.runtimeconfig.json
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\Banco.ApiCore.dll
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\Banco.ApiCore.pdb
+C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.dll
+C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\FluentValidation.dll
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\Humanizer.dll
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -163,5 +165,3 @@ C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\Banco.ApiCore.pdb
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\Banco.ApiCore.genruntimeconfig.cache
 C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\obj\Debug\net6.0\ref\Banco.ApiCore.dll
-C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.dll
-C:\Projetos\C#\NerdStoreEnterprise\ApiBanco\ApiBanco\scr\Banco.ApiCore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
