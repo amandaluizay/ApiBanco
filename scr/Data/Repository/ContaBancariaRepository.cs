@@ -15,6 +15,7 @@ namespace Data.Repository
     {
         public ContaBancariaRepository(MeuDbContext context) : base(context)
         {
+
         }
     }
 }
