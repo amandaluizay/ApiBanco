@@ -5,10 +5,14 @@
       "FluentValidation/11.2.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -42,19 +46,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/Larissa/.nuget/packages/": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
+      "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
-      "packagesPath": "/Users/Larissa/.nuget/packages/",
-      "outputPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/obj/",
+      "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Larissa/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -99,7 +104,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
