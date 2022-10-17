@@ -34,6 +34,8 @@ namespace Data.Mappings
             builder.Property(p => p.Senha6dig)
                 .IsRequired()
                 .HasColumnType("varchar(200)");
+
+            builder.ToTable("ContaBancaria");
         }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Banco.ApiCore.Controllers
 {
-    [Route("ContaBancaria/api")]
+    [Route("v1/contaFisica/api")]
     public class ContaBancariaController : HomeController
     {
         private readonly IContaBancariaRepository _contabancariaRepository;
