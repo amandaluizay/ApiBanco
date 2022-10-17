@@ -69,6 +69,8 @@ namespace Banco.ApiCore.Controllers
         }
 
         [HttpDelete("{id:guid}")]
+
+        //Quebrado
         public async Task<ActionResult<ContaBancariaViewModel>> Excluir(Guid id)
         {
             var ContaModel = await ObterPorId(id);
@@ -79,9 +81,6 @@ namespace Banco.ApiCore.Controllers
 
             return CustomResponse(ContaModel);
         }
-
-
-
 
 
     }
