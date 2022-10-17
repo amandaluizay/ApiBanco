@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Business.Models;
 
 namespace Data.Mappings
@@ -15,9 +10,7 @@ namespace Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.CPF)
-                .IsRequired()
-                .HasColumnType("varchar(200)");
+            builder.HasAlternateKey(p => p.CPF);
 
             builder.Property(p => p.Agencia)
                 .IsRequired()

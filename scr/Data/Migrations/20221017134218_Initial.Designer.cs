@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MeuDbContext))]
-    [Migration("20221014202018_Initial")]
+    [Migration("20221017134218_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace Data.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("ContaCorrente")
                         .IsRequired()
@@ -51,7 +51,9 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContaBancarias");
+                    b.HasAlternateKey("CPF");
+
+                    b.ToTable("ContaBancaria", (string)null);
                 });
 #pragma warning restore 612, 618
         }

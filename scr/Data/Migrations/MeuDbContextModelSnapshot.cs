@@ -34,7 +34,7 @@ namespace Data.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("ContaCorrente")
                         .IsRequired()
@@ -48,6 +48,8 @@ namespace Data.Migrations
                         .HasColumnType("INT");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("CPF");
 
                     b.ToTable("ContaBancaria", (string)null);
                 });
