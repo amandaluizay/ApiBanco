@@ -10,7 +10,7 @@ namespace Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.Agencia)
+            builder.Property(p => p.CPF)
                 .IsRequired()
                 .IsUnicode()
                 .HasColumnType("varchar(200)");
