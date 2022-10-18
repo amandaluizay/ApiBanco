@@ -1,11 +1,15 @@
-﻿using System;
+﻿using Business.Interfaces;
+using Business.Models;
+using Data.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace Data.Repository
 {
-    public class ContaJuridicaRepository
+    public class ContaJuridicaRepository : Repository<ContaJuridica>, IContaJuridicaRepository
     {
-        public ContaJuridicaRepository()
+        public ContaJuridicaRepository(MeuDbContext context) : base(context)
         {
+
         }
     }
 }
-

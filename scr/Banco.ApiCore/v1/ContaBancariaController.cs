@@ -3,8 +3,9 @@ using Banco.ApiCore.ViewModel;
 using Business.Interfaces;
 using Business.Models;
 using Microsoft.AspNetCore.Mvc;
+using Banco.ApiCore.Controllers;
 
-namespace Banco.ApiCore.Controllers
+namespace Banco.ApiCore.v1
 {
     [Route("v1/contaFisica/api")]
     public class ContaBancariaController : HomeController
@@ -27,9 +28,9 @@ namespace Banco.ApiCore.Controllers
         public async Task<IEnumerable<ContaBancariaViewModel>> ObterTodos()
         {
 
-            var fornecedor = _mapper.Map<IEnumerable<ContaBancariaViewModel>>(await _contabancariaRepository.ObterTodos());
+            var contas = _mapper.Map<IEnumerable<ContaBancariaViewModel>>(await _contabancariaRepository.ObterTodos());
 
-            return fornecedor;
+            return contas;
         }
 
         [HttpGet("{id:guid}")]
