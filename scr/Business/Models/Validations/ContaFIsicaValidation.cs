@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Business.Models.Validations
 {
-    public class CategoriaValidation : AbstractValidator<ContaBancaria>
+    public class ContaFisicaValidation : AbstractValidator<ContaFisica>
     {
-        public CategoriaValidation()
+        public ContaFisicaValidation()
         {
             RuleFor(c => c.CPF)
                 .NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido")

@@ -2,7 +2,7 @@
 
 namespace Business.Interfaces
 {
-    public interface IContaBancariaRepository: IRepository<ContaBancaria>
+    public interface IContaFisicaRepository: IRepository<ContaFisica>
     {
 
     }

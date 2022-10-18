@@ -11,8 +11,13 @@ namespace Banco.ApiCore.Configuration
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
             services.AddScoped<MeuDbContext>();
-            services.AddScoped<IContaBancariaRepository, ContaBancariaRepository>();
-            services.AddScoped<IContaBancariaService, ContaBancariaService>();
+
+            services.AddScoped<IContaFisicaRepository, ContaFisicaRepository>();
+            services.AddScoped<IContaFisicaService, ContaFisicaService>();
+
+            services.AddScoped<IContaJuridicaRepository, ContaJuridicaRepository>();
+            services.AddScoped<IContaJuridicaService, ContaJuridicaService>();
+
             services.AddScoped<INotificador, Notificador>();
             return services;
         }

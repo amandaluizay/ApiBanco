@@ -22,7 +22,7 @@ namespace Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Business.Models.ContaBancaria", b =>
+            modelBuilder.Entity("Business.Models.ContaFisica", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -52,6 +52,38 @@ namespace Data.Migrations
                     b.HasAlternateKey("CPF");
 
                     b.ToTable("ContaBancaria", (string)null);
+                });
+
+            modelBuilder.Entity("Business.Models.ContaJuridica", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ChaveJ")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<string>("Cnpj")
+                        .IsRequired()
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Senha6Dig")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("Senha8Dig")
+                        .HasColumnType("INT");
+
+                    b.Property<string>("Usuario")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.HasAlternateKey("Cnpj");
+
+                    b.ToTable("ContaJuridica", (string)null);
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,6 @@
 ﻿namespace Business.Models
 {
-    public class ContaBancaria : Entity
+    public class ContaFisica : Entity
     {
 
         public string CPF { get; set; }

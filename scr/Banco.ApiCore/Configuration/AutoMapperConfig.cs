@@ -8,7 +8,8 @@ namespace Banco.ApiCore.Configuration
     {
         public AutoMapperConfig()
         {
-            CreateMap<ContaBancaria, ContaBancariaViewModel>().ReverseMap();
+            CreateMap<ContaFisica, ContaFisicaViewModel>().ReverseMap();
+            CreateMap<ContaJuridica, ContaJuridicaViewModel>().ReverseMap();
 
         }
     }

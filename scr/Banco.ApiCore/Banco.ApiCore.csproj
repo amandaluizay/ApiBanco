@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -35,8 +34,5 @@
 
   <ItemGroup>
     <None Remove="v1\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="v1\" />
   </ItemGroup>
 </Project>

@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository
 {
-    public class ContaBancariaRepository : Repository<ContaBancaria>, IContaBancariaRepository
+    public class ContaFisicaRepository : Repository<ContaFisica>, IContaFisicaRepository
     {
-        public ContaBancariaRepository(MeuDbContext context) : base(context)
+        public ContaFisicaRepository(MeuDbContext context) : base(context)
         {
 
         }

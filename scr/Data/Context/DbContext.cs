@@ -13,7 +13,7 @@ namespace Data.Context
     {
         public MeuDbContext(DbContextOptions<MeuDbContext> options) : base(options) { }
 
-        public DbSet<ContaBancaria> ContaBancarias { get; set; }
+        public DbSet<ContaFisica> ContaBancarias { get; set; }
         public DbSet<ContaJuridica> ContaJuridicas { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)

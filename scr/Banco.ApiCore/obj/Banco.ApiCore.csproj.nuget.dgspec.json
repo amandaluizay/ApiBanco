@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Larissa/Documents/repos/ApiBanco/scr/Banco.ApiCore/Banco.ApiCore.csproj": {}
+    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj": {}
   },
   "projects": {
-    "/Users/Larissa/Documents/repos/ApiBanco/scr/Banco.ApiCore/Banco.ApiCore.csproj": {
+    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Larissa/Documents/repos/ApiBanco/scr/Banco.ApiCore/Banco.ApiCore.csproj",
+        "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
         "projectName": "Banco.ApiCore",
-        "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Banco.ApiCore/Banco.ApiCore.csproj",
-        "packagesPath": "/Users/Larissa/.nuget/packages/",
-        "outputPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Banco.ApiCore/obj/",
+        "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Larissa/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,11 +27,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj": {
-                "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj"
+              "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {
+                "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj"
               },
-              "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/Data.csproj": {
-                "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/Data.csproj"
+              "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj": {
+                "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj"
               }
             }
           }
@@ -121,21 +122,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj": {
+    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
+        "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
-        "packagesPath": "/Users/Larissa/.nuget/packages/",
-        "outputPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/obj/",
+        "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Larissa/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -180,21 +182,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/Data.csproj": {
+    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/Data.csproj",
+        "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/Data.csproj",
-        "packagesPath": "/Users/Larissa/.nuget/packages/",
-        "outputPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Data/obj/",
+        "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Larissa/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -206,8 +209,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj": {
-                "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj"
+              "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {
+                "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj"
               }
             }
           }
@@ -267,7 +270,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

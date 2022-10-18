@@ -2,7 +2,6 @@
 using Business.Notificacoes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.Collections.Generic;
 
 namespace Banco.ApiCore.Controllers
 {
@@ -10,22 +9,13 @@ namespace Banco.ApiCore.Controllers
     public abstract class HomeController : ControllerBase
     {
         private readonly INotificador _notificador;
-        //public readonly IUser AppUser;
 
         protected Guid UsuarioId { get; set; }
         protected bool UsuarioAutenticado { get; set; }
 
-        protected HomeController(INotificador notificador //,IUser appUser
-                                 )
+        protected HomeController(INotificador notificador)
         {
             _notificador = notificador;
-            //AppUser = appUser;
-
-            //if (appUser.IsAuthenticated())
-            //{
-            //    UsuarioId = appUser.GetUserId();
-            //    UsuarioAutenticado = true;
-            //}
         }
 
         protected bool OperacaoValida()

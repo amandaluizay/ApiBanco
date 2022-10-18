@@ -4,16 +4,13 @@ using Business.Models;
 
 namespace Data.Mappings
 {
-    public class CategoriaMapping : IEntityTypeConfiguration<ContaBancaria>
+    public class CategoriaMapping : IEntityTypeConfiguration<ContaFisica>
     {
-        public void Configure(EntityTypeBuilder<ContaBancaria> builder)
+        public void Configure(EntityTypeBuilder<ContaFisica> builder)
         {
             builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.CPF)
-                .IsRequired()
-                .IsUnicode()
-                .HasColumnType("varchar(200)");
+            builder.HasAlternateKey(p => p.CPF);
 
             builder.Property(p => p.Agencia)
                 .IsRequired()

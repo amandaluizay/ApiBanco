@@ -2,10 +2,10 @@
 
 namespace Business.Interfaces
 {
-    public interface IContaBancariaService : IDisposable
+    public interface IContaFisicaService : IDisposable
     {
-        Task Adicionar(ContaBancaria conta);
-        Task Atualizar(ContaBancaria conta);
+        Task Adicionar(ContaFisica conta);
+        Task Atualizar(ContaFisica conta);
         Task Remover(Guid id);
     }
 }
