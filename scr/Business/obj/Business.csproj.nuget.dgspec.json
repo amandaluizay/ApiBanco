@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {}
+    "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {
+    "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
+        "projectUniqueName": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\scr\\Business\\obj\\",
+        "projectPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/Business.csproj",
+        "packagesPath": "/Users/Larissa/.nuget/packages/",
+        "outputPath": "/Users/Larissa/Documents/repos/ApiBanco/scr/Business/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Larissa/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -60,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
         }
       }
     }
