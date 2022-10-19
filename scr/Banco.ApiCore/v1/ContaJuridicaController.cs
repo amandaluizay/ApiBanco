@@ -69,17 +69,17 @@ namespace Banco.ApiCore.v1
             return CustomResponse(ContaModel);
         }
 
-        //[HttpDelete("{id:guid}")]
-        //public async Task<ActionResult<ContaJuridicaViewModel>> Excluir(Guid id)
-        //{
-        //    var ContaModel = await ObterPorId(id);
+        [HttpDelete("{id:guid}")]
+        public async Task<ActionResult<ContaJuridicaViewModel>> Excluir(Guid id)
+        {
+            var ContaModel = await ObterPorId(id);
 
-        //    if (ContaModel == null) return NotFound();
+            if (ContaModel == null) return NotFound();
 
-        //    await _contaJuridicaService.Remover(id);
+            await _contaJuridicaService.Remover(id);
 
-        //    return CustomResponse(ContaModel);
-        //}
+            return CustomResponse(ContaModel);
+        }
 
 
     }

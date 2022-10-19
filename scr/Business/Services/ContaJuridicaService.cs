@@ -1,5 +1,6 @@
 ﻿using Business.Interfaces;
 using Business.Models;
+using System.Xml.Linq;
 
 
 namespace Business.Services
@@ -13,9 +14,22 @@ namespace Business.Services
             _contaJuridicaRepository = contaJuridicaRepository;
         }
 
-        public async Task Adicionar(ContaJuridica conta)
+        public async Task<bool> Adicionar(ContaJuridica conta)
         {
+            if (_contaJuridicaRepository.Buscar(c => c.CNPJ == conta.CNPJ).Result.Any())
+            {
+                Notificar("CNPJ já Existente.");
+                return false;
+            }
+
+
+
+
+
+
+
             await _contaJuridicaRepository.Adicionar(conta);
+            return true;
         }
 
         public async Task Atualizar(ContaJuridica conta)

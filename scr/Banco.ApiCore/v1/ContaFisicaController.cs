@@ -50,6 +50,7 @@ namespace Banco.ApiCore.v1
 
             await _contaFisicaService.Adicionar(_mapper.Map<ContaFisica>(ContaModel));
 
+
             return CustomResponse(ContaModel);
         }
 
@@ -70,19 +71,19 @@ namespace Banco.ApiCore.v1
             return CustomResponse(ContaModel);
         }
 
-        //[HttpDelete("{id:guid}/{cpf:string}")]
+        [HttpDelete("{id:guid}")]
 
-        
-        //public async Task<ActionResult<ContaFisicaViewModel>> Excluir(Guid id)
-        //{
-        //    var ContaModel = await ObterPorId(id);
 
-        //    if (ContaModel == null) return NotFound();
+        public async Task<ActionResult<ContaFisicaViewModel>> Excluir(Guid id)
+        {
+            var ContaModel = await ObterPorId(id);
 
-        //    await _contaFisicaService.Remover(id);
+            if (ContaModel == null) return NotFound();
 
-        //    return CustomResponse(ContaModel);
-        //}
+            await _contaFisicaService.Remover(id);
+
+            return CustomResponse(ContaModel);
+        }
 
     }
 }
