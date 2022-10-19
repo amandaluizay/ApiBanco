@@ -10,7 +10,9 @@ namespace Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            builder.HasAlternateKey(p => p.CPF);
+            builder.Property(p => p.CPF)
+                .IsRequired()
+                .HasColumnType("varchar(11)");
 
             builder.Property(p => p.Agencia)
                 .IsRequired()

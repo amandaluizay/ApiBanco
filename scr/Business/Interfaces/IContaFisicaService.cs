@@ -4,7 +4,7 @@ namespace Business.Interfaces
 {
     public interface IContaFisicaService : IDisposable
     {
-        Task Adicionar(ContaFisica conta);
+        Task<bool> Adicionar(ContaFisica conta);
         Task Atualizar(ContaFisica conta);
         Task Remover(Guid id);
     }

@@ -1,5 +1,6 @@
 ﻿using Business.Interfaces;
 using Business.Models;
+using Business.Models.Validations;
 using System.Collections.Generic;
 
 namespace Business.Services
@@ -13,10 +14,17 @@ namespace Business.Services
             _contaFisicaRepository = contaBancariaRepository;
         }
 
-        public async Task Adicionar(ContaFisica conta)
+        public async Task<bool> Adicionar(ContaFisica conta)
         {
+            if (_contaFisicaRepository.Buscar(c => c.CPF == conta.CPF).Result.Any())
+            {
+                Notificar("CPF já Existente.");
+                return false;
+            }
 
             await _contaFisicaRepository.Adicionar(conta);
+            return true;
+
         }
 
         public async Task Atualizar(ContaFisica conta)

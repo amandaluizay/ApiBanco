@@ -11,6 +11,11 @@ namespace Business.Models
         protected Entity()
         {
             Id = Guid.NewGuid();
+            //Usuario
+            //Criação
+            //UsiarioAlteração
+            //DataCriação
+
         }
 
         public Guid Id { get; set; }

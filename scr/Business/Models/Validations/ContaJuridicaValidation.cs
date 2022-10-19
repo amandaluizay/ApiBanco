@@ -6,7 +6,7 @@ namespace Business.Models.Validations
     {
         public ContaJuridicaValidation() 
         {
-            RuleFor(c => c.Cnpj)
+            RuleFor(c => c.CNPJ)
                 .NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido")
                 .Length(14).WithMessage("O campo {PropertyName} precisa ter {MaxLength} caracteres");
 

@@ -10,7 +10,9 @@ namespace Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            builder.HasAlternateKey(p => p.Cnpj);
+            builder.Property(p => p.CNPJ)
+                .IsRequired()
+                .HasColumnType("varchar(14)");
 
             builder.Property(p => p.ChaveJ)
                 .IsRequired()

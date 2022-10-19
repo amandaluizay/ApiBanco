@@ -31,7 +31,7 @@ namespace Data.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(11)");
 
                     b.Property<string>("ContaCorrente")
                         .IsRequired()
@@ -46,8 +46,6 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasAlternateKey("CPF");
-
                     b.ToTable("ContaFisica", (string)null);
                 });
 
@@ -57,13 +55,13 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<string>("CNPJ")
+                        .IsRequired()
+                        .HasColumnType("varchar(14)");
+
                     b.Property<string>("ChaveJ")
                         .IsRequired()
                         .HasColumnType("varchar(6)");
-
-                    b.Property<string>("Cnpj")
-                        .IsRequired()
-                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Senha6Dig")
                         .IsRequired()
@@ -77,8 +75,6 @@ namespace Data.Migrations
                         .HasColumnType("varchar(35)");
 
                     b.HasKey("Id");
-
-                    b.HasAlternateKey("Cnpj");
 
                     b.ToTable("ContaJuridica", (string)null);
                 });

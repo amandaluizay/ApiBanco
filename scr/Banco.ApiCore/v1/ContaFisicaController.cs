@@ -84,6 +84,5 @@ namespace Banco.ApiCore.v1
         //    return CustomResponse(ContaModel);
         //}
 
-
     }
 }
