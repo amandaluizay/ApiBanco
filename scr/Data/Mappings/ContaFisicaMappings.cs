@@ -30,6 +30,14 @@ namespace Data.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(6)");
 
+            builder.Property(p => p.DataCriacao)
+                .IsRequired()
+                .HasColumnType("Datetime");
+
+            builder.Property(p => p.UsuarioLogin)
+                .IsRequired()
+                .HasColumnType("varchar(35)");
+
             builder.ToTable("ContaFisica");
         }
     }
