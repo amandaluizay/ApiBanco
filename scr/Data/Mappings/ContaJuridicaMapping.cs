@@ -14,11 +14,11 @@ namespace Data.Mappings
 
             builder.Property(p => p.ChaveJ)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(6)");
 
             builder.Property(p => p.Usuario)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(35)");
 
             builder.Property(p => p.Senha8Dig)
                 .IsRequired()
@@ -26,7 +26,7 @@ namespace Data.Mappings
 
             builder.Property(p => p.Senha6Dig)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(6)");
 
             builder.ToTable("ContaJuridica");
         }

@@ -4,7 +4,7 @@ using Business.Models;
 
 namespace Data.Mappings
 {
-    public class CategoriaMapping : IEntityTypeConfiguration<ContaFisica>
+    public class ContaFisicaMapping : IEntityTypeConfiguration<ContaFisica>
     {
         public void Configure(EntityTypeBuilder<ContaFisica> builder)
         {
@@ -14,11 +14,11 @@ namespace Data.Mappings
 
             builder.Property(p => p.Agencia)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(5)");
 
             builder.Property(p => p.ContaCorrente)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(10)");
 
             builder.Property(p => p.Senha8dig)
                 .IsRequired()
@@ -26,9 +26,9 @@ namespace Data.Mappings
 
             builder.Property(p => p.Senha6dig)
                 .IsRequired()
-                .HasColumnType("varchar(200)");
+                .HasColumnType("varchar(6)");
 
-            builder.ToTable("ContaBancaria");
+            builder.ToTable("ContaFisica");
         }
     }
 }

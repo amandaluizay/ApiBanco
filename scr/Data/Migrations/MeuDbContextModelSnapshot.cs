@@ -3,7 +3,6 @@ using System;
 using Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -18,19 +17,17 @@ namespace Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.10")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Business.Models.ContaFisica", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("Agencia")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(5)");
 
                     b.Property<string>("CPF")
                         .IsRequired()
@@ -38,11 +35,11 @@ namespace Data.Migrations
 
                     b.Property<string>("ContaCorrente")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(10)");
 
                     b.Property<string>("Senha6dig")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(6)");
 
                     b.Property<int>("Senha8dig")
                         .HasColumnType("INT");
@@ -51,18 +48,18 @@ namespace Data.Migrations
 
                     b.HasAlternateKey("CPF");
 
-                    b.ToTable("ContaBancaria", (string)null);
+                    b.ToTable("ContaFisica", (string)null);
                 });
 
             modelBuilder.Entity("Business.Models.ContaJuridica", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("ChaveJ")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(6)");
 
                     b.Property<string>("Cnpj")
                         .IsRequired()
@@ -70,14 +67,14 @@ namespace Data.Migrations
 
                     b.Property<string>("Senha6Dig")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(6)");
 
                     b.Property<int>("Senha8Dig")
                         .HasColumnType("INT");
 
                     b.Property<string>("Usuario")
                         .IsRequired()
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(35)");
 
                     b.HasKey("Id");
 

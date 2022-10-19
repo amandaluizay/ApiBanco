@@ -1,5 +1,6 @@
 ﻿using Business.Interfaces;
 using Business.Models;
+using System.Collections.Generic;
 
 namespace Business.Services
 {
@@ -34,5 +35,6 @@ namespace Business.Services
         {
             _contaFisicaRepository.Dispose();
         }
+
     }
 }

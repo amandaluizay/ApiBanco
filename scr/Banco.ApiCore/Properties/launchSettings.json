@@ -46,7 +46,7 @@
     "Banco.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      "launchUrl": "v1/contaFisica/api",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

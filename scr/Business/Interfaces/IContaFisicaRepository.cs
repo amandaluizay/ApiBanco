@@ -2,8 +2,7 @@
 
 namespace Business.Interfaces
 {
-    public interface IContaFisicaRepository: IRepository<ContaFisica>
+    public interface IContaFisicaRepository : IRepository<ContaFisica>
     {
-
     }
 }
