@@ -3313,11 +3313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
+      "projectUniqueName": "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
       "projectName": "Banco.ApiCore",
-      "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
+      "projectPath": "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Banco.ApiCore\\Banco.ApiCore.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Banco.ApiCore\\obj\\",
+      "outputPath": "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Banco.ApiCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3333,11 +3333,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj": {
-              "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Business\\Business.csproj"
+            "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Business\\Business.csproj": {
+              "projectPath": "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Business\\Business.csproj"
             },
-            "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj": {
-              "projectPath": "C:\\Projetos\\C#\\NerdStoreEnterprise\\ApiBanco\\ApiBanco\\ApiBanco\\scr\\Data\\Data.csproj"
+            "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Data\\Data.csproj": {
+              "projectPath": "C:\\Projetos\\C#\\ApiBanco-main\\scr\\Data\\Data.csproj"
             }
           }
         }

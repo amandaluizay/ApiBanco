@@ -2,7 +2,6 @@
 {
     public class ContaFisica : Entity
     {
-
         public string CPF { get; set; }
         public string Agencia { get; set; }
         public string ContaCorrente { get;set; }

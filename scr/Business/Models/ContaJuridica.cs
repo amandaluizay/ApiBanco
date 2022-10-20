@@ -2,7 +2,7 @@
 {
     public class ContaJuridica : Entity
     {
-        public Guid Id { get; set; }
+
         public string CNPJ { get; set; }
         public string ChaveJ { get; set; }
         public string Usuario { get; set; }

@@ -72,11 +72,11 @@ namespace Banco.ApiCore.v1
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ContaJuridicaViewModel>> Excluir(Guid id)
         {
-            var ContaModel = await ObterPorId(id);
+            var ContaModel = _mapper.Map<ContaJuridicaViewModel>(await _contaJuridicaRepository.ObterPorId(id));
 
             if (ContaModel == null) return NotFound();
 
-            await _contaJuridicaService.Remover(id);
+            await _contaJuridicaRepository.Remover(id);
 
             return CustomResponse(ContaModel);
         }
