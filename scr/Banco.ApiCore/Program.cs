@@ -14,7 +14,7 @@ builder.Services.ResolveDependencies();
 builder.Services.AddDbContext<MeuDbContext>(options =>
 {
     //MYSQL
-    options.UseMySql("server=localhost;initial catalog=BancoBB;uid=root;pwd=Root",
+    options.UseMySql("server=localhost;initial catalog=BancoBB;uid=root;pwd=1234",
     Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql"));
     //SQLSERVER
     //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
