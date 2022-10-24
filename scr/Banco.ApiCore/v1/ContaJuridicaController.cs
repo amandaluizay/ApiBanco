@@ -17,7 +17,8 @@ namespace Banco.ApiCore.v1
         public ContaJuridicaController(IContaJuridicaRepository contaJuridicaRepository,
                                        IContaJuridicaService contaJuridicaService,
                                        INotificador notificador,
-                                       IMapper mapper) : base(notificador)
+                                       IMapper mapper,
+                                       IUser user) : base(notificador,user)
         {
             _contaJuridicaRepository = contaJuridicaRepository;
             _contaJuridicaService = contaJuridicaService;
@@ -72,11 +73,11 @@ namespace Banco.ApiCore.v1
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ContaJuridicaViewModel>> Excluir(Guid id)
         {
-            var ContaModel = _mapper.Map<ContaJuridicaViewModel>(await _contaJuridicaRepository.ObterPorId(id));
+            var ContaModel = await ObterPorId(id);
 
             if (ContaModel == null) return NotFound();
 
-            await _contaJuridicaRepository.Remover(id);
+            await _contaJuridicaService.Remover(id);
 
             return CustomResponse(ContaModel);
         }

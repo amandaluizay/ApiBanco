@@ -3,7 +3,6 @@ using Banco.ApiCore.Controllers;
 using Banco.ApiCore.ViewModel;
 using Business.Interfaces;
 using Business.Models;
-using Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banco.ApiCore.v1
@@ -18,7 +17,8 @@ namespace Banco.ApiCore.v1
         public ContaFisicaController(IContaFisicaRepository contabancariaRepository,
                                        IContaFisicaService contabancariaService,
                                        INotificador notificador,
-                                       IMapper mapper) : base(notificador)
+                                       IMapper mapper,
+                                       IUser user) : base(notificador, user)
         {
             _contaFisicaRepository = contabancariaRepository;
             _contaFisicaService = contabancariaService;
@@ -73,13 +73,15 @@ namespace Banco.ApiCore.v1
         }
 
         [HttpDelete("{id:guid}")]
+
+
         public async Task<ActionResult<ContaFisicaViewModel>> Excluir(Guid id)
         {
-            var ContaModel = await _contaFisicaRepository.ObterPorId(id);
+            var ContaModel = await ObterPorId(id);
 
             if (ContaModel == null) return NotFound();
 
-            await _contaFisicaRepository.Remover(id);
+            await _contaFisicaService.Remover(id);
 
             return CustomResponse(ContaModel);
         }
