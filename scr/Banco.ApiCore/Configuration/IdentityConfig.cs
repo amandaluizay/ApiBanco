@@ -14,7 +14,7 @@ namespace Banco.ApiCore.Configuration
             IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseMySql("server=localhost;initial catalog=BancoBd;uid=root;pwd=Root",
+            options.UseMySql("server=localhost;initial catalog=Bancobd;uid=root;pwd=Root",
             Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.0-mysql")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
             services.AddDefaultIdentity<IdentityUser>()

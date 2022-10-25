@@ -3,11 +3,12 @@ using Banco.ApiCore.Controllers;
 using Banco.ApiCore.ViewModel;
 using Business.Interfaces;
 using Business.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banco.ApiCore.V1.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/contafisica")]
 
