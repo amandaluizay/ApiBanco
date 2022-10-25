@@ -1,37 +1,45 @@
 using Banco.ApiCore.Configuration;
+using Banco.ApiCore.Data;
 using Data.Context;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.ResolveDependencies();
+builder.Services.AddIdentityConfig(builder.Configuration);
+
 builder.Services.AddDbContext<MeuDbContext>(options =>
 {
     //MYSQL
-    options.UseMySql("server=mysql-banco-api.mysql.database.azure.com;initial catalog=BancoBB;uid=MysqlRoot;pwd=4Ucode00",
+    options.UseMySql("server=localhost;initial catalog=BancoBd;uid=root;pwd=Root",
     Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.0-mysql")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
     //SQLSERVER
-    //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
 });
 
-var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    //MYSQL
+    options.UseMySql("server=localhost;initial catalog=BancoBd;uid=root;pwd=Root",
+    Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.0-mysql")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+    //SQLSERVER
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking); 
 
-app.UseHttpsRedirection();
+});
 
-app.UseAuthorization();
+builder.Services.AddApiConfig();
+builder.Services.AddSwaggerConfig();
 
-app.MapControllers();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.ResolveDependencies();
+
+var app = builder.Build();
+var apiVersionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+
+app.UseApiConfig(app.Environment);
+app.UseSwaggerConfig(apiVersionDescriptionProvider);
 
 app.Run();

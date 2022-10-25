@@ -9,13 +9,22 @@ namespace Banco.ApiCore.Controllers
     public abstract class HomeController : ControllerBase
     {
         private readonly INotificador _notificador;
+        public readonly IUser AppUser;
 
         protected Guid UsuarioId { get; set; }
         protected bool UsuarioAutenticado { get; set; }
 
-        protected HomeController(INotificador notificador)
+        protected HomeController(INotificador notificador,
+                                 IUser appUser)
         {
             _notificador = notificador;
+            AppUser = appUser;
+
+            if (appUser.IsAuthenticated())
+            {
+                UsuarioId = appUser.GetUserId();
+                UsuarioAutenticado = true;
+            }
         }
 
         protected bool OperacaoValida()
@@ -23,7 +32,7 @@ namespace Banco.ApiCore.Controllers
             return !_notificador.TemNotificacao();
         }
 
-        protected ActionResult CustomResponse(object result = null)
+        protected ActionResult CostumResponse(object result = null)
         {
             if (OperacaoValida())
             {
@@ -41,10 +50,10 @@ namespace Banco.ApiCore.Controllers
             });
         }
 
-        protected ActionResult CustomResponse(ModelStateDictionary modelState)
+        protected ActionResult CostumResponse(ModelStateDictionary modelState)
         {
             if (!modelState.IsValid) NotificarErroModelInvalida(modelState);
-            return CustomResponse();
+            return CostumResponse();
         }
 
         protected void NotificarErroModelInvalida(ModelStateDictionary modelState)
